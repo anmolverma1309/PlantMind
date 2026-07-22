@@ -2,7 +2,7 @@
 
 > **AI-powered industrial knowledge management platform** that transforms scattered maintenance logs, SOPs, P&IDs, and regulatory documents into a queryable knowledge graph with multi-agent AI copilots.
 
-Built for the **Google Gemini API Developer Competition 2025** 🏆
+Built for the **ET AI Hackathon 2.0** 🏆
 
 ---
 
