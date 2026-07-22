@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd plantmind/web && npm run build",
+  "buildCommand": "cd plantmind/web && npm install && npm run build",
   "outputDirectory": "plantmind/web/dist",
   "framework": "vite",
   "devCommand": "cd plantmind/web && npm run dev",
