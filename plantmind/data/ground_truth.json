@@ -1,0 +1,111 @@
+{
+  "benchmark_version": "1.0",
+  "description": "15 ground-truth facts for evaluating PlantMind query accuracy",
+  "facts": [
+    {
+      "id": "GT-01",
+      "question": "How many work orders have been raised for Pump P-104?",
+      "answer": "3 work orders: WO-2024-001, WO-2024-004, WO-2024-008",
+      "source_docs": ["work_orders.csv"],
+      "type": "single_document"
+    },
+    {
+      "id": "GT-02",
+      "question": "What is the root cause of recurring vibration in Pump P-104?",
+      "answer": "Coupling misalignment between the pump and its driver motor, compounded by bearing wear. Base frame may have shifted due to thermal expansion.",
+      "source_docs": ["maintenance_report_P104.pdf", "work_orders.csv"],
+      "type": "cross_document"
+    },
+    {
+      "id": "GT-03",
+      "question": "How many seal failures has Compressor C-302 experienced?",
+      "answer": "2 seal failures: WO-2024-003 (2024-03-10) and WO-2024-006/INC-2024-003 (2024-05-18)",
+      "source_docs": ["work_orders.csv", "incident_report_C302.pdf"],
+      "type": "cross_document"
+    },
+    {
+      "id": "GT-04",
+      "question": "What is the OISD-STD-154 requirement for emergency isolation valve response time?",
+      "answer": "Response time shall not exceed 5 seconds from signal to fully closed position (Clause 7.2.2)",
+      "source_docs": ["OISD_STD_154_excerpt.pdf"],
+      "type": "single_document"
+    },
+    {
+      "id": "GT-05",
+      "question": "Does Valve V-045 comply with OISD-STD-154 Clause 7.2?",
+      "answer": "No. Inspection found actuator response time of 8 seconds, exceeding the 5-second maximum requirement.",
+      "source_docs": ["inspection_V045_scan.png", "OISD_STD_154_excerpt.pdf"],
+      "type": "cross_document_compliance"
+    },
+    {
+      "id": "GT-06",
+      "question": "What equipment is involved in the emergency shutdown procedure for Unit-3?",
+      "answer": "P-104, P-105, HX-201, HX-202, C-301, C-302, V-045, V-046, DC-01",
+      "source_docs": ["SOP_emergency_shutdown.pdf"],
+      "type": "single_document"
+    },
+    {
+      "id": "GT-07",
+      "question": "Who is assigned to maintain Pump P-104?",
+      "answer": "John Patel, Senior Maintenance Technician",
+      "source_docs": ["work_orders.csv", "maintenance_report_P104.pdf"],
+      "type": "cross_document"
+    },
+    {
+      "id": "GT-08",
+      "question": "What was the root cause of the Compressor C-302 incident?",
+      "answer": "Repeated mechanical seal failure caused by: (a) misalignment (0.15mm vs 0.05mm spec), (b) operating temperature exceeding design by 12°C (192°C actual vs 180°C rated), (c) seal material not rated for sustained high temps, (d) previous repair didn't address underlying misalignment.",
+      "source_docs": ["incident_report_C302.pdf"],
+      "type": "single_document"
+    },
+    {
+      "id": "GT-09",
+      "question": "What regulations apply to maintenance work on Pump P-104?",
+      "answer": "OISD-STD-154 (Work Permit System) and Factory Act 1948, Section 21 (Fencing of Machinery)",
+      "source_docs": ["maintenance_report_P104.pdf", "OISD_STD_154_excerpt.pdf", "factory_act_excerpt.pdf"],
+      "type": "cross_document_compliance"
+    },
+    {
+      "id": "GT-10",
+      "question": "What is the recommended corrective action for the recurring vibration issue in P-104?",
+      "answer": "Laser alignment of pump-motor coupling, base frame leveling survey, increase vibration monitoring from quarterly to monthly, consider upgrading to flexible coupling.",
+      "source_docs": ["maintenance_report_P104.pdf"],
+      "type": "single_document"
+    },
+    {
+      "id": "GT-11",
+      "question": "Are there any common failure patterns across different equipment in Unit-3?",
+      "answer": "Yes — misalignment is a recurring root cause affecting both P-104 (pump-motor coupling misalignment causing vibration/bearing failure) and C-302 (compressor-driver misalignment causing seal failure). This suggests a plant-wide alignment program may be needed.",
+      "source_docs": ["maintenance_report_P104.pdf", "incident_report_C302.pdf", "work_orders.csv"],
+      "type": "cross_document_insight"
+    },
+    {
+      "id": "GT-12",
+      "question": "What is the ESD procedure when high discharge pressure is detected on C-302?",
+      "answer": "Compressor C-302 has auto-shutdown on high discharge pressure (Step 4 of SOP-SAFE-007). The ESD sequence also includes tripping feed pumps, closing V-045, and opening V-046 to flare.",
+      "source_docs": ["SOP_emergency_shutdown.pdf"],
+      "type": "single_document"
+    },
+    {
+      "id": "GT-13",
+      "question": "What Factory Act requirements apply to confined space entry?",
+      "answer": "Section 38: Space must be ventilated and gas-tested, person must wear breathing apparatus, a responsible person must be stationed outside with rescue equipment, and records must be maintained.",
+      "source_docs": ["factory_act_excerpt.pdf"],
+      "type": "single_document"
+    },
+    {
+      "id": "GT-14",
+      "question": "Which work orders were raised as critical priority?",
+      "answer": "WO-2024-003 (C-302 seal leak) and WO-2024-006 (C-302 second seal failure)",
+      "source_docs": ["work_orders.csv"],
+      "type": "single_document"
+    },
+    {
+      "id": "GT-15",
+      "question": "What cross-document insight connects V-045 inspection results to regulatory compliance?",
+      "answer": "The V-045 inspection report shows actuator response time of 8 seconds, which violates OISD-STD-154 Clause 7.2.2 (max 5 seconds). Per Clause 7.2.3, the failed valve must be repaired within 24 hours or the unit must be shut down. The SOP-SAFE-007 lists V-045 as an emergency isolation valve in the shutdown sequence.",
+      "source_docs": ["inspection_V045_scan.png", "OISD_STD_154_excerpt.pdf", "SOP_emergency_shutdown.pdf"],
+      "type": "cross_document_compliance"
+    }
+  ]
+}
