@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Shield, Hammer, AlertOctagon, RefreshCw } from 'lucide-react';
 import { API_BASE } from '../config';
+import { getErrorMessage } from '../utils/errorHandler';
 import './DashboardView.css';
 
 function DashboardView() {
@@ -15,7 +16,8 @@ function DashboardView() {
       const response = await axios.get(`${API_BASE}/graph/stats`);
       setStats(response.data);
     } catch (err) {
-      console.error(err);
+      console.error('Stats fetch error:', err);
+      setStats({ total_nodes: 0, total_edges: 0, error: getErrorMessage(err, API_BASE) });
     }
   };
 
@@ -25,7 +27,8 @@ function DashboardView() {
       const response = await axios.post(`${API_BASE}/agents/rca`, { equipment_tag: tag });
       setRcaResult(response.data);
     } catch (err) {
-      console.error(err);
+      console.error('RCA error:', err);
+      setRcaResult({ error: getErrorMessage(err, API_BASE) });
     } finally {
       setLoading(false);
     }

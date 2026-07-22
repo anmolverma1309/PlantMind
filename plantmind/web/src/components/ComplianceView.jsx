@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { AlertCircle, CheckCircle } from 'lucide-react';
 import { API_BASE } from '../config';
+import { getErrorMessage } from '../utils/errorHandler';
 import './ComplianceView.css';
 
 function ComplianceView() {
@@ -14,7 +15,8 @@ function ComplianceView() {
         const response = await axios.post(`${API_BASE}/agents/compliance`);
         setData(response.data);
       } catch (err) {
-        console.error(err);
+        console.error('Compliance audit error:', err);
+        setData({ audit_score: 0, errors: [getErrorMessage(err, API_BASE)] });
       } finally {
         setLoading(false);
       }

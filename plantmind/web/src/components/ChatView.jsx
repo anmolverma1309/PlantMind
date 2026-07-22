@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import { Send, Sparkles, AlertTriangle, ShieldCheck, HelpCircle } from 'lucide-react';
 import { API_BASE } from '../config';
+import { getErrorMessage } from '../utils/errorHandler';
 import './ChatView.css';
 
 function ChatView() {
@@ -61,11 +62,12 @@ function ChatView() {
 
       setMessages(prev => [...prev, botMessage]);
     } catch (err) {
-      console.error(err);
+      console.error('Chat error:', err);
+      const errorMessage = getErrorMessage(err, API_BASE);
       setMessages(prev => [...prev, {
         id: Date.now().toString() + '-err',
         sender: 'bot',
-        text: 'Error contacting the PlantMind Brain. Ensure the FastAPI backend is running on port 8000.'
+        text: `❌ ${errorMessage}`
       }]);
     } finally {
       setIsLoading(false);

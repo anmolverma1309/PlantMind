@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Award, Zap } from 'lucide-react';
 import { API_BASE } from '../config';
+import { getErrorMessage } from '../utils/errorHandler';
 import './LessonsView.css';
 
 function LessonsView() {
@@ -14,7 +15,8 @@ function LessonsView() {
         const response = await axios.post(`${API_BASE}/agents/lessons`);
         setData(response.data);
       } catch (err) {
-        console.error(err);
+        console.error('Lessons scan error:', err);
+        setData({ lessons: [], error: getErrorMessage(err, API_BASE) });
       } finally {
         setLoading(false);
       }

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { Network } from 'lucide-react';
 import { API_BASE } from '../config';
+import { getErrorMessage } from '../utils/errorHandler';
 import './GraphView.css';
 
 function GraphView() {
@@ -14,7 +15,8 @@ function GraphView() {
         const response = await axios.get(`${API_BASE}/graph/export`);
         setData(response.data);
       } catch (err) {
-        console.error(err);
+        console.error('Graph fetch error:', err);
+        setData({ nodes: [], edges: [], error: getErrorMessage(err, API_BASE) });
       } finally {
         setLoading(false);
       }
