@@ -1,0 +1,9 @@
+wo_id,date,equipment_tag,equipment_name,description,assigned_to,status,priority,hours_spent,failure_mode,root_cause
+WO-2024-001,2024-01-15,P-104,Centrifugal Pump P-104,Excessive vibration detected during routine check. Bearing replacement required.,John Patel,Completed,High,6.5,Bearing Failure,Worn bearing due to misalignment
+WO-2024-002,2024-02-03,HX-201,Shell & Tube Heat Exchanger HX-201,Tube bundle fouling causing reduced heat transfer. Chemical cleaning scheduled.,Sarah Khan,Completed,Medium,12.0,Fouling,Scale buildup from cooling water
+WO-2024-003,2024-03-10,C-302,Reciprocating Compressor C-302,Seal leak detected on discharge side. Emergency repair.,Raj Mehta,Completed,Critical,8.0,Seal Failure,Worn mechanical seal — exceeded MTBF
+WO-2024-004,2024-03-22,P-104,Centrifugal Pump P-104,Follow-up vibration analysis post-bearing replacement. Within acceptable limits.,John Patel,Completed,Low,2.0,None,Preventive check
+WO-2024-005,2024-04-05,V-045,Gate Valve V-045,Valve stem packing leak during pressure test. Repacked.,John Patel,Completed,Medium,3.5,Packing Leak,Degraded packing material
+WO-2024-006,2024-05-18,C-302,Reciprocating Compressor C-302,Second seal failure in 3 months. Full mechanical seal assembly replaced.,Raj Mehta,Completed,Critical,14.0,Seal Failure,Repeated seal failure — investigate alignment and operating conditions
+WO-2024-007,2024-06-01,HX-201,Shell & Tube Heat Exchanger HX-201,Annual inspection and hydro test. Minor corrosion noted on shell side.,Sarah Khan,In Progress,Medium,8.0,Corrosion,Age-related material degradation
+WO-2024-008,2024-06-15,P-104,Centrifugal Pump P-104,Vibration alarm triggered again. Coupling misalignment suspected.,John Patel,Open,High,0.0,Vibration,Pending investigation
