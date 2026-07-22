@@ -15,7 +15,17 @@ CHROMA_PERSIST_DIR = Path(os.getenv("CHROMA_PERSIST_DIR", str(DATA_DIR / "chroma
 # API
 API_HOST = os.getenv("API_HOST", "0.0.0.0")
 API_PORT = int(os.getenv("API_PORT", "8000"))
-CORS_ORIGINS = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:3000").split(",")
+
+# CORS Origins - supports both localhost and production domains
+CORS_ORIGINS_STR = os.getenv(
+    "CORS_ORIGINS", 
+    "http://localhost:5173,http://localhost:3000,http://localhost:8000"
+)
+CORS_ORIGINS = [origin.strip() for origin in CORS_ORIGINS_STR.split(",")]
+
+# Add wildcard for development if no specific origins configured
+if len(CORS_ORIGINS) == 0:
+    CORS_ORIGINS = ["*"]
 
 # LLM
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
