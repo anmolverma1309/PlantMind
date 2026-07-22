@@ -1,0 +1,21 @@
+THE FACTORIES ACT, 1948 — RELEVANT SECTIONS (EXCERPT)
+=======================================================
+
+SECTION 21: Fencing of Machinery
+----------------------------------
+(1) In every factory the following shall be securely fenced:
+    (a) every moving part of a prime mover and every flywheel
+    (b) the headrace and tailrace of every water-wheel and water-turbine
+    (c) every part of an electric generator, motor, or rotary converter
+    (d) every part of transmission machinery
+(2) Fencing shall be of substantial construction and constantly maintained.
+(3) No fencing shall be removed while machinery is in motion.
+
+SECTION 38: Precautions Against Dangerous Fumes
+-------------------------------------------------
+(1) No person shall enter any confined space in which dangerous fumes are 
+    likely to be present unless:
+    (a) the space has been adequately ventilated and tested for gas
+    (b) the person is wearing suitable breathing apparatus
+    (c) a responsible person is stationed outside with rescue equipment
+(2) Records of all confined space entries shall be maintained.
