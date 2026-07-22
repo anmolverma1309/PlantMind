@@ -1,0 +1,60 @@
+INCIDENT REPORT
+================
+Incident ID: INC-2024-003
+Date: 2024-05-18
+Time: 14:35
+Location: Coastal Refinery Unit-3, Compressor Bay
+Equipment: Reciprocating Compressor C-302
+
+CLASSIFICATION: Near Miss — Hydrocarbon Release (Minor)
+
+1. DESCRIPTION
+---------------
+During normal operation, the mechanical seal on Compressor C-302 discharge 
+side failed catastrophically, resulting in a minor hydrocarbon gas release. 
+The gas detection system GDS-07 activated at 14:35, triggering automatic 
+ventilation fans. Area was evacuated per SOP-SAFE-007.
+
+This is the SECOND seal failure on C-302 in 3 months (previous: WO-2024-003, 
+dated 2024-03-10). 
+
+2. IMMEDIATE ACTIONS TAKEN
+----------------------------
+- Emergency shutdown initiated per SOP-SAFE-007
+- Area evacuated, headcount confirmed at AP-2
+- Gas levels monitored until below LEL
+- Equipment isolated and locked out per OISD-STD-154
+
+3. ROOT CAUSE ANALYSIS
+------------------------
+Primary Cause: Repeated mechanical seal failure
+Contributing Factors:
+  a) Misalignment between compressor and driver (0.15mm offset measured, 
+     spec allows max 0.05mm)
+  b) Operating temperature exceeding design by 12°C during peak summer
+  c) Seal material (carbon/SiC) not rated for sustained temperatures above 
+     180°C — actual operating temp reached 192°C
+  d) Previous repair (WO-2024-003) replaced seal but did not address 
+     underlying misalignment
+
+4. CORRECTIVE ACTIONS
+-----------------------
+| Action | Responsible | Due Date | Status |
+|--------|------------|----------|--------|
+| Full laser alignment of C-302 | Raj Mehta | 2024-06-01 | Completed |
+| Upgrade to high-temp seal (SiC/SiC) | Procurement | 2024-06-15 | Ordered |
+| Install temperature monitoring on seal | Instrumentation | 2024-06-10 | Completed |
+| Review all compressor seals plant-wide | V. Sharma | 2024-07-01 | Pending |
+
+5. LESSONS LEARNED
+--------------------
+- Repeated failures on the same equipment within a short period must trigger 
+  an engineering review, not just a like-for-like replacement
+- Operating temperature deviations should be flagged by the DCS alarm system — 
+  alarm setpoint review needed
+- This incident pattern (seal failure + misalignment + temperature exceedance) 
+  should be added to the plant's Lessons Learned database for all rotating 
+  equipment
+
+Investigated by: V. Sharma, Maintenance Manager
+Reviewed by: R. Sundaram, Plant Manager
