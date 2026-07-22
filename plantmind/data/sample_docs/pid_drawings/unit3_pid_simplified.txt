@@ -1,0 +1,36 @@
+COASTAL REFINERY UNIT-3 — PIPING & INSTRUMENTATION DIAGRAM (P&ID)
+==================================================================
+Drawing No: PID-U3-001
+Rev: 2.0
+System: Crude Feed and Distillation Column DC-01 Section
+
+PROCESS FLOW & CONNECTIONS:
+---------------------------
+1. Crude Oil Tank (TK-001) discharge line connects to suction of Crude Transfer Pump (P-104).
+2. Emergency Isolation Valve (V-045) is located on the suction line between TK-001 and P-104.
+3. Pump P-104 discharge line flows through Shell & Tube Heat Exchanger (HX-201) shell side.
+4. Exchanger HX-201 effluent line feeds directly into Crude Distillation Column (DC-01).
+5. Column DC-01 overhead gas line connects to process gas Compressor (C-302).
+6. Emergency depressurization line on column DC-01 overhead connects to flare line via Valve (V-046).
+
+INSTRUMENTATION & CONTROLS:
+---------------------------
+- Control Room Panel (CP-03) handles ESD pushbutton signals.
+- Emergency shutdown line trips feed pump P-104, P-105.
+- Gas detection system (GDS-07) monitor located in compressor bay near C-302.
+- Line CL-015 connects V-045 to P-104.
+
+LEGEND / EQUIPMENT LIST:
+-----------------------
+- TK-001: Crude Storage Tank
+- P-104: Centrifugal Pump (Crude Transfer)
+- P-105: Standby Crude Transfer Pump
+- HX-201: Feed/Effluent Heat Exchanger
+- DC-01: Distillation Column
+- C-302: Process Gas Compressor
+- V-045: Emergency Isolation Gate Valve
+- V-046: Depressurization Valve (to flare)
+- CP-03: Control Room Panel
+- GDS-07: Gas Detector (LEL sensor)
+- CL-015: Crude Transfer Process Line
+- AP-2: Muster / Assembly Point Area
