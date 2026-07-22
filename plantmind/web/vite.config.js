@@ -8,7 +8,6 @@ export default defineConfig({
     port: 3000,
     host: true
   },
-  define: {
-    'import.meta.env.PROD': JSON.stringify(process.env.NODE_ENV === 'production')
-  }
+  // Vite automatically exposes VITE_* environment variables to import.meta.env
+  // No need for manual define, just set VITE_API_BASE in .env or Vercel dashboard
 })

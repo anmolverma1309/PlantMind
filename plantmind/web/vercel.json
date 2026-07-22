@@ -3,11 +3,6 @@
   "outputDirectory": "dist",
   "framework": "vite",
   "devCommand": "npm run dev",
-  "env": {
-    "VITE_API_BASE": {
-      "description": "API base URL for backend endpoints"
-    }
-  },
   "rewrites": [
     {
       "source": "/:path*",
