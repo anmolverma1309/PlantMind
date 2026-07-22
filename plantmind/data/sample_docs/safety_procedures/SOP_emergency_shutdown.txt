@@ -1,0 +1,56 @@
+STANDARD OPERATING PROCEDURE
+==============================
+SOP ID: SOP-SAFE-007
+Title: Emergency Shutdown Procedure for Unit-3
+Revision: 3.1
+Effective Date: 2024-01-01
+Approved By: R. Sundaram, Plant Manager
+
+1. PURPOSE
+-----------
+This procedure defines the steps for emergency shutdown (ESD) of Coastal 
+Refinery Unit-3, covering the crude distillation column DC-01, associated 
+heat exchangers (HX-201, HX-202), pumps (P-104, P-105), and compressors 
+(C-301, C-302).
+
+2. SCOPE
+---------
+Applicable to all operating and maintenance personnel assigned to Unit-3.
+Compliance with OISD-STD-154 (Work Permit System) and PESO 
+(Petroleum and Explosives Safety Organisation) guidelines is mandatory.
+
+3. EMERGENCY SHUTDOWN STEPS
+-----------------------------
+Step 1: Activate ESD pushbutton at Control Room Panel CP-03
+Step 2: Verify all feed pumps (P-104, P-105) have tripped
+Step 3: Close emergency isolation valve V-045 on crude feed line
+Step 4: Verify compressor C-302 auto-shutdown on high discharge pressure
+Step 5: Open depressurization valve V-046 to flare system
+Step 6: Confirm heat exchanger HX-201 cooling water flow is maintained
+Step 7: Notify Control Room Operator and Shift Supervisor
+Step 8: Initiate headcount at Assembly Point AP-2
+
+4. POST-SHUTDOWN ACTIONS
+--------------------------
+- Do NOT restart any equipment until Root Cause Analysis is completed
+- Maintain Lockout/Tagout as per OISD-STD-154 Section 4.3
+- Document all actions in Shift Log and notify Safety Department
+- If hydrocarbon release detected, follow SOP-ENV-003 (Spill Response)
+
+5. EQUIPMENT REFERENCE
+------------------------
+| Tag    | Description                  | Normal State | ESD State |
+|--------|------------------------------|-------------|-----------|
+| P-104  | Crude Transfer Pump          | Running     | Tripped   |
+| P-105  | Standby Transfer Pump        | Standby     | Tripped   |
+| HX-201 | Feed/Effluent Heat Exchanger | Online      | Cooling   |
+| C-302  | Process Gas Compressor       | Running     | Shutdown  |
+| V-045  | Crude Feed Isolation Valve   | Open        | Closed    |
+| V-046  | Depressurization Valve       | Closed      | Open      |
+
+6. REGULATORY REFERENCES
+--------------------------
+- OISD-STD-154: Standard on Work Permit System
+- PESO: Petroleum and Explosives Safety Organisation Rules
+- Factory Act 1948, Section 38: Precautions against dangerous fumes
+- IS 15656:2006: Hazard Identification and Risk Assessment
