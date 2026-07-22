@@ -1,8 +1,8 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "buildCommand": "cd plantmind/web && npm run build",
+  "outputDirectory": "plantmind/web/dist",
   "framework": "vite",
-  "devCommand": "npm run dev",
+  "devCommand": "cd plantmind/web && npm run dev",
   "env": {
     "VITE_API_BASE": {
       "description": "API base URL for backend endpoints"
@@ -10,13 +10,13 @@
   },
   "rewrites": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/assets/:path*",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
