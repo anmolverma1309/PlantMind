@@ -1,0 +1,25 @@
+EQUIPMENT INSPECTION REPORT
+============================
+Date: 2024-05-20
+Inspector: John Patel
+Equipment Tag: V-045
+Equipment Name: Gate Valve - Crude Feed Line
+Location: Unit-3, Area B, Line CL-015
+
+INSPECTION CHECKLIST:
+[✓] Visual inspection — no external damage
+[✓] Stem packing — recently replaced (ref WO-2024-005)
+[✗] Actuator function test — FAILED (slow response, 8 sec vs 3 sec spec)
+[✓] Position indicator — functional
+[✓] Body/bonnet gasket — no leaks detected
+[✗] Handwheel operation — stiff, needs lubrication
+
+OVERALL CONDITION: FAIR
+NEXT INSPECTION DUE: 2024-11-20
+
+NOTES:
+Actuator response time exceeds OISD-STD-154 requirement of ≤5 seconds
+for emergency isolation valves. Recommend actuator overhaul before next
+scheduled turnaround. Ref: OISD-STD-154, Clause 7.2.
+
+Signature: J. Patel
