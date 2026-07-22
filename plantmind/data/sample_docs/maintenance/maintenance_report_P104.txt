@@ -1,0 +1,51 @@
+MAINTENANCE REPORT
+==================
+Equipment: Centrifugal Pump P-104
+Location: Coastal Refinery Unit-3, Area A
+Report Date: 2024-04-15
+Prepared By: John Patel, Senior Maintenance Technician
+
+1. SUMMARY
+-----------
+Pump P-104 has experienced recurring vibration issues over the past quarter. 
+Two work orders (WO-2024-001 and WO-2024-008) were raised for excessive 
+vibration. Root cause analysis indicates coupling misalignment between the 
+pump and its driver motor, compounded by a history of bearing wear.
+
+2. EQUIPMENT HISTORY
+---------------------
+- Commissioned: 2018
+- Service: Crude transfer from Tank Farm to Distillation Column DC-01
+- Operating Parameters: 150 m³/hr flow, 12 bar discharge pressure
+- Maintenance Frequency: Quarterly vibration monitoring, annual overhaul
+
+3. FAILURE ANALYSIS
+--------------------
+Date        | Issue                | Root Cause
+2024-01-15  | Excessive vibration  | Worn bearing (misalignment-induced)
+2024-03-22  | Follow-up check      | Vibration within limits post-repair
+2024-06-15  | Vibration alarm      | Coupling misalignment (recurring)
+
+The recurring pattern suggests the base frame may have shifted due to 
+thermal expansion effects during summer operation. Recommend laser 
+alignment check and base frame survey.
+
+4. RECOMMENDATIONS
+-------------------
+a) Perform laser alignment of pump-motor coupling (Priority: HIGH)
+b) Commission base frame leveling survey
+c) Increase vibration monitoring frequency from quarterly to monthly
+d) Consider upgrading to flexible coupling to tolerate minor misalignment
+
+5. SAFETY NOTES
+----------------
+All maintenance performed per SOP-MAINT-012 (Rotating Equipment Maintenance 
+Procedure). Lockout/Tagout verified per OISD-STD-154 requirements.
+
+6. REGULATORY COMPLIANCE
+--------------------------
+Pump P-104 falls under OISD-STD-154 (Work Permit System) and Factory Act 
+Section 21 (Fencing of Machinery). All work permits were obtained prior to 
+maintenance activities.
+
+Report approved by: V. Sharma, Maintenance Manager
