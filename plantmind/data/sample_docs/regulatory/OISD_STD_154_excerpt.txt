@@ -1,0 +1,33 @@
+OISD STANDARD 154 — WORK PERMIT SYSTEM (EXCERPT)
+==================================================
+(Oil Industry Safety Directorate)
+
+1. SCOPE
+---------
+This standard covers the work permit system requirements for petroleum 
+refineries, oil & gas processing plants, and petrochemical facilities.
+
+4.3 LOCKOUT/TAGOUT REQUIREMENTS
+---------------------------------
+4.3.1 All energy sources shall be positively isolated before maintenance 
+      work begins.
+4.3.2 Lockout devices shall be applied by authorized personnel only.
+4.3.3 Each worker shall apply their personal lock.
+4.3.4 Tagout tags shall include: worker name, date, time, and reason.
+
+7.2 EMERGENCY ISOLATION VALVES
+-------------------------------
+7.2.1 Emergency isolation valves shall be tested quarterly.
+7.2.2 Valve response time shall not exceed 5 seconds from signal to 
+      fully closed position.
+7.2.3 Failed valves shall be reported immediately and repaired within 
+      24 hours or the associated process unit shall be shut down.
+7.2.4 All EIV tests shall be documented and records maintained for 
+      minimum 5 years.
+
+9.1 HOT WORK PERMITS
+----------------------
+9.1.1 Hot work within 15 meters of hydrocarbon-containing equipment 
+      requires gas testing immediately before and during work.
+9.1.2 Fire watch shall be maintained for 30 minutes after hot work 
+      completion.
