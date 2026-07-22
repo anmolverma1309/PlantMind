@@ -1,0 +1,104 @@
+.graph-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+}
+
+.graph-visual-wrapper {
+  padding: 24px;
+  border-radius: var(--border-radius-lg);
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.visual-legend {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  font-size: 13px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.equip { background: var(--accent-primary); }
+.dot.doc { background: var(--accent-secondary); }
+.dot.reg { background: var(--accent-tertiary); }
+.dot.wo { background: var(--accent-warning); }
+
+.nodes-relationships-table h3 {
+  font-size: 16px;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.node-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.node-chip {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--glass-border);
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.chip-type {
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.chip-type.equipment { background: rgba(59, 130, 246, 0.1); color: var(--accent-primary); }
+.chip-type.document { background: rgba(16, 185, 129, 0.1); color: var(--accent-secondary); }
+.chip-type.regulation { background: rgba(139, 92, 246, 0.1); color: var(--accent-tertiary); }
+.chip-type.workorder { background: rgba(245, 158, 11, 0.1); color: var(--accent-warning); }
+
+.edge-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edge-row {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-sm);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.node-ref {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+.rel-tag {
+  color: var(--accent-tertiary);
+}
