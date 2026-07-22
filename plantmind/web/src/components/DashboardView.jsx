@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Shield, Hammer, AlertOctagon, RefreshCw } from 'lucide-react';
+import { API_BASE } from '../config';
 import './DashboardView.css';
-
-const API_BASE = 'http://localhost:8000/api/v1';
 
 function DashboardView() {
   const [stats, setStats] = useState({ total_nodes: 0, total_edges: 0 });

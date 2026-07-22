@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Award, Zap } from 'lucide-react';
+import { API_BASE } from '../config';
 import './LessonsView.css';
-
-const API_BASE = 'http://localhost:8000/api/v1';
 
 function LessonsView() {
   const [data, setData] = useState(null);

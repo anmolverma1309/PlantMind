@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { Network } from 'lucide-react';
+import { API_BASE } from '../config';
 import './GraphView.css';
-
-const API_BASE = 'http://localhost:8000/api/v1';
 
 function GraphView() {
   const [data, setData] = useState({ nodes: [], edges: [] });

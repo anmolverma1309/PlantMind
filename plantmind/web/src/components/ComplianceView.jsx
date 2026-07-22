@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { AlertCircle, CheckCircle } from 'lucide-react';
+import { API_BASE } from '../config';
 import './ComplianceView.css';
-
-const API_BASE = 'http://localhost:8000/api/v1';
 
 function ComplianceView() {
   const [data, setData] = useState(null);

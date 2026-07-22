@@ -1,9 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import { Send, Sparkles, AlertTriangle, ShieldCheck, HelpCircle } from 'lucide-react';
+import { API_BASE } from '../config';
 import './ChatView.css';
-
-const API_BASE = 'http://localhost:8000/api/v1';
 
 function ChatView() {
   const [messages, setMessages] = useState([
