@@ -1,0 +1,77 @@
+.lessons-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lesson-card {
+  padding: 24px;
+  border-radius: var(--border-radius-lg);
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.lesson-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lesson-badge-icon {
+  color: var(--accent-tertiary);
+}
+
+.lesson-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.highlighted-learning {
+  background: rgba(139, 92, 246, 0.05);
+  border: 1px solid rgba(139, 92, 246, 0.1);
+  padding: 12px;
+  border-radius: var(--border-radius-sm);
+  color: var(--text-primary);
+}
+
+.checklist-box {
+  background: rgba(16, 185, 129, 0.02);
+  border: 1px solid rgba(16, 185, 129, 0.1);
+  padding: 16px;
+  border-radius: var(--border-radius-md);
+  margin-top: 10px;
+}
+
+.checklist-box h4 {
+  color: var(--accent-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.checklist-box ul {
+  padding-left: 20px;
+  color: var(--text-secondary);
+}
+
+.checklist-box li {
+  margin-bottom: 6px;
+}
